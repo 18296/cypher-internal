@@ -11,6 +11,16 @@ def cypher():
         except:
             pass
 
+    while True:
+        yesno = input("do you want to cypher or decypher\t")
+        yesno = yesno.lower()
+        if yesno == "decypher":
+            cypherkey = -cypherkey
+            break
+        elif yesno == "cypher":
+            break
+        else:
+            pass
     codein = input("enter word\t")
     codeinlist = list(codein)
     x=0
